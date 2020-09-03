@@ -1,6 +1,6 @@
 import React from "react";
 
-import { aboutPage, skills, contacts, twitterImage } from "./About.module.scss";
+import { aboutPage, skills, contacts } from "./About.module.scss";
 import linkedIn from "../../assets/linkedIn.png";
 import emailLogo from "../../assets/email.png";
 import twitter from "../../assets/twitter.png";
@@ -11,8 +11,8 @@ const About = () => {
     <main className={aboutPage}>
       <h1>About Me</h1>
       <h2>
-        I enjoy building web apps, solving problems, meditation and coffee and
-        I'm always grateful for the opportunity to work on meaningful projects
+        I enjoy building web apps, solving problems, meditation, coffee and I'm
+        always grateful for the opportunity to work on meaningful projects
       </h2>
       <section className={skills}>
         <h3>Some of my skills are...</h3>
@@ -55,7 +55,7 @@ const About = () => {
           <a
             href="mailto:gabi.portfolio02@gmail.com"
             target="_blank"
-            rel="noopener noreferer"
+            rel="noopener noreferrer"
           >
             <img src={emailLogo} alt="email logo" />{" "}
             <p>gabi.portfolio02@gmail.com</p>
@@ -64,7 +64,7 @@ const About = () => {
             <a
               href="https://www.linkedin.com/in/sg-lupu"
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
             >
               <img src={linkedIn} alt="linkedIn logo" />
             </a>
@@ -73,7 +73,7 @@ const About = () => {
             <a
               href="https://twitter.com/SgLupu"
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
             >
               <img src={twitter} alt="twitter logo" />
             </a>
@@ -82,7 +82,7 @@ const About = () => {
             <a
               href="https://twitter.com/SgLupu"
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
             >
               <img src={github} alt="github logo" />
             </a>

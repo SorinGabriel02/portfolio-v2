@@ -1,23 +1,29 @@
 @import "../../styles/variables";
 
 .mainHeader {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6vmax;
-  background-color: #d8ffab;
+  height: $headerHeight;
+  margin-bottom: 0 auto;
+  background-color: $headerBgColor;
   box-shadow: 0 0 4px;
 }
 
 .logo {
-  width: 5vmax;
-  height: 5vmax;
+  width: 7vh;
+  height: 7vh;
   margin-left: 1vmax;
-  border-radius: 14px;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+
+.logo:hover {
+  transform: rotate(1turn);
 }
 
 .links {
@@ -32,5 +38,8 @@
   }
   a:hover {
     text-shadow: 0 0 2px orange;
+  }
+  a:active {
+    text-shadow: 0 0 10px rgb(150, 229, 255);
   }
 }

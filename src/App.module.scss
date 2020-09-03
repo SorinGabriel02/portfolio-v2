@@ -2,11 +2,12 @@
 
 .app {
   position: relative;
+  top: $headerHeight;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100vh - $headerHeight;
   background: rgba(202, 255, 153, 1);
   background: -moz-linear-gradient(
     left,

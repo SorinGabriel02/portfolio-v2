@@ -1,13 +1,16 @@
 .aboutPage {
   margin: 2%;
   h1 {
+    padding-bottom: 1vmax;
     margin-bottom: 2vmax;
     text-align: center;
+    text-shadow: 0 0 1px orange;
     border-bottom: 1px solid white;
   }
   h2 {
     margin-bottom: 1vmax;
-    padding-bottom: 1vmax;
+    padding-bottom: 2vmax;
+    text-shadow: 0 0 1px orange;
     border-bottom: 1px solid white;
   }
   ul {
@@ -23,7 +26,7 @@
     align-items: center;
   }
   p {
-    color: rgb(44, 34, 0);
+    font-weight: bold;
     text-shadow: 0 0 2px;
     font-size: 1.1rem;
   }
@@ -31,7 +34,7 @@
 
 .skills {
   margin-bottom: 1vmax;
-  padding-bottom: 1vmax;
+  padding-bottom: 2vmax;
   border-bottom: 1px solid white;
 }
 
@@ -40,7 +43,7 @@
   display: flex;
   align-content: center;
   li {
-    margin: 0.5vmax;
+    margin: 1vmax;
   }
   img {
     width: 30px;

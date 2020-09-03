@@ -1,12 +1,16 @@
 @import "../../styles/variables";
 
 .landing {
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
   padding: 2vmax;
   box-shadow: 0 0 4px $boxShadowColor;
   background-color: rgba(134, 134, 134, 0.2);
-
-  h1,
+  margin: 2% 0;
+  h1 {
+    text-align: center;
+  }
   h2,
   h3 {
     text-align: center;
@@ -23,7 +27,20 @@
   }
 }
 
-@media (max-width: 350px) {
+.pageSvg {
+  width: 11vmax;
+  height: auto;
+  align-self: flex-end;
+  margin-right: 3rem;
+}
+
+.bubbleSvg {
+  width: 7vmax;
+  height: auto;
+  margin-left: 4rem;
+}
+
+@media (max-width: 450px) {
   .landing {
     padding: 0.3vmax;
     width: 90%;
@@ -32,5 +49,16 @@
     h2 {
       padding: 0.3vmax;
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .pageSvg {
+    width: 18vmax;
+    margin-bottom: 1rem;
+  }
+  .bubbleSvg {
+    width: 12vmax;
+    margin-top: 1rem;
   }
 }

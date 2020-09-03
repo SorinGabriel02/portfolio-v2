@@ -7,4 +7,73 @@
 
 html {
   font-family: "Source Code Pro", monospace;
+  position: relative;
+  min-height: 100%;
+}
+
+// svg animations landing page
+#lineOne {
+  fill: green;
+}
+#lineOne,
+#firstLine {
+  animation: lineOne 1.5s linear infinite alternate-reverse;
+}
+
+#lineThree {
+  fill: orange;
+}
+
+#lineThree,
+#thirdLine {
+  animation: lineOne 2s linear infinite alternate-reverse;
+}
+
+#secondLine,
+#lineTwo {
+  animation: lineTwo 2.4s ease-in-out infinite alternate-reverse;
+}
+
+#contour {
+  animation: contour 3s linear infinite alternate-reverse;
+}
+
+.dots {
+  animation: dots 5s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes dots {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(79%);
+  }
+}
+
+@keyframes contour {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.95);
+  }
+}
+
+@keyframes lineOne {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes lineTwo {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(6deg);
+  }
 }
