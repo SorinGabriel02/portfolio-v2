@@ -80,7 +80,7 @@ const About = () => {
           </li>
           <li>
             <a
-              href="https://twitter.com/SgLupu"
+              href="https://github.com/SorinGabriel02"
               target="_blank"
               rel="noopener noreferrer"
             >
