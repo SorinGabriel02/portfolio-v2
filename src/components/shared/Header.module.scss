@@ -1,16 +1,23 @@
+@import "../../styles/variables";
+
 .mainHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid white;
+  height: 6vmax;
+  background-color: #d8ffab;
+  box-shadow: 0 0 4px;
 }
 
 .logo {
-  width: 6vmax;
-  height: 6vmax;
+  width: 5vmax;
+  height: 5vmax;
   margin-left: 1vmax;
-  background-color: white;
-  border-radius: 50%;
+  border-radius: 14px;
 }
 
 .links {
@@ -19,5 +26,11 @@
   list-style: none;
   li {
     margin-right: 2vmax;
+  }
+  a {
+    color: black;
+  }
+  a:hover {
+    text-shadow: 0 0 2px orange;
   }
 }

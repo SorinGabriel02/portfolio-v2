@@ -1,0 +1,72 @@
+.aboutPage {
+  margin: 2%;
+  h1 {
+    margin-bottom: 2vmax;
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+  h2 {
+    margin-bottom: 1vmax;
+    padding-bottom: 1vmax;
+    border-bottom: 1px solid white;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  li {
+    margin-right: 3vmax;
+    display: flex;
+    align-items: center;
+  }
+  p {
+    color: rgb(44, 34, 0);
+    text-shadow: 0 0 2px;
+    font-size: 1.1rem;
+  }
+}
+
+.skills {
+  margin-bottom: 1vmax;
+  padding-bottom: 1vmax;
+  border-bottom: 1px solid white;
+}
+
+.contacts {
+  margin-top: 2vmax;
+  display: flex;
+  align-content: center;
+  li {
+    margin: 0.5vmax;
+  }
+  img {
+    width: 30px;
+    display: inline-block;
+    align-self: center;
+    background-color: white;
+    border-radius: 3px;
+  }
+  img:hover {
+    box-shadow: 0 0 2px;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    text-shadow: 0 0 2px orangered;
+    transition: all 0.2s ease;
+  }
+  a:hover {
+    cursor: pointer;
+  }
+  p {
+    align-self: center;
+  }
+  p:hover {
+    text-shadow: 0 0 4px orangered;
+  }
+}

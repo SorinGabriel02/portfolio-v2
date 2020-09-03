@@ -1,0 +1,36 @@
+@import "../../styles/variables";
+
+.landing {
+  width: 70%;
+  padding: 2vmax;
+  box-shadow: 0 0 4px $boxShadowColor;
+  background-color: rgba(134, 134, 134, 0.2);
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    padding: 1vmax;
+  }
+  mark,
+  i {
+    background-color: transparent;
+    text-shadow: 0 0 1px orangered;
+  }
+  h1 {
+    color: white;
+    text-shadow: 1px 1px 4px orangered;
+  }
+}
+
+@media (max-width: 350px) {
+  .landing {
+    padding: 0.3vmax;
+    width: 90%;
+    h1,
+    h2,
+    h2 {
+      padding: 0.3vmax;
+    }
+  }
+}
