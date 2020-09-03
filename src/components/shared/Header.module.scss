@@ -1,0 +1,23 @@
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.logo {
+  width: 6vmax;
+  height: 6vmax;
+  margin-left: 1vmax;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.links {
+  display: flex;
+  margin-right: 2vmax;
+  list-style: none;
+  li {
+    margin-right: 2vmax;
+  }
+}

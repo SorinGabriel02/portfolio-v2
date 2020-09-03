@@ -1,10 +1,4 @@
 .app {
+  min-height: 100vh;
   background-color: whitesmoke;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  h1 {
-    text-shadow: 0 0 2px orange;
-  }
 }
