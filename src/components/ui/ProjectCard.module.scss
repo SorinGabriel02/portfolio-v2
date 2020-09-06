@@ -46,3 +46,13 @@
     box-shadow: 0 0 4px;
   }
 }
+
+@media (max-width: 550px) {
+  .projectCard {
+    width: 92%;
+    margin-bottom: 3vh;
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+}

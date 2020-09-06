@@ -3,11 +3,13 @@
 .landing {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  margin: 3vh 0;
   width: 75%;
+  min-height: 74vh;
   padding: 2vmax;
   box-shadow: 0 0 4px $boxShadowColor;
-  background-color: rgba(134, 134, 134, 0.2);
-  margin: 2% 0;
+  background-color: rgba(134, 134, 134, 0.15);
   h1 {
     text-align: center;
   }
@@ -40,7 +42,18 @@
   margin-left: 4rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 900px) {
+  .pageSvg {
+    width: 18vmax;
+    margin: 5vh 4vmax;
+  }
+  .bubbleSvg {
+    width: 12vmax;
+    margin: 5vh 4vmax;
+  }
+}
+
+@media (max-width: 550px) {
   .landing {
     padding: 0.3vmax;
     width: 90%;
@@ -49,16 +62,5 @@
     h2 {
       padding: 0.3vmax;
     }
-  }
-}
-
-@media (max-width: 900px) {
-  .pageSvg {
-    width: 18vmax;
-    margin-bottom: 1rem;
-  }
-  .bubbleSvg {
-    width: 12vmax;
-    margin-top: 1rem;
   }
 }

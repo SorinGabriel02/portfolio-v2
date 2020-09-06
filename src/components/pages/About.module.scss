@@ -13,6 +13,9 @@
     text-shadow: 0 0 1px orange;
     border-bottom: 1px solid white;
   }
+  h3 {
+    text-shadow: 0 0 1px orangered;
+  }
   ul {
     list-style: none;
     display: flex;
@@ -30,9 +33,22 @@
     text-shadow: 0 0 2px;
     font-size: 1.1rem;
   }
+  img {
+    width: 30px;
+    display: inline-block;
+    align-self: center;
+    background-color: white;
+    border-radius: 3px;
+  }
+  img:hover {
+    box-shadow: 0 0 4px;
+  }
 }
 
 .skills {
+  h3 {
+    margin-bottom: 1vmax;
+  }
   margin-bottom: 1vmax;
   padding-bottom: 2vmax;
   border-bottom: 1px solid white;
@@ -42,34 +58,67 @@
   margin-top: 2vmax;
   display: flex;
   align-content: center;
-  li {
-    margin: 1vmax;
-  }
-  img {
-    width: 30px;
-    display: inline-block;
-    align-self: center;
-    background-color: white;
-    border-radius: 3px;
-  }
-  img:hover {
-    box-shadow: 0 0 2px;
-  }
+  justify-content: center;
   a {
     display: flex;
-    justify-content: center;
     text-decoration: none;
     color: black;
-    text-shadow: 0 0 2px orangered;
+    margin: 0 7vmax;
+    box-shadow: 0 0 8px;
     transition: all 0.2s ease;
   }
   a:hover {
     cursor: pointer;
+    box-shadow: 0 0 20px;
   }
-  p {
-    align-self: center;
+}
+
+.email {
+  animation: fly 5s linear infinite;
+}
+
+.linked {
+  animation: fly 5.8s linear infinite;
+}
+
+.tweet {
+  animation: fly 5.3s linear infinite alternate;
+}
+
+.git {
+  animation: fly 5.2s linear infinite alternate-reverse;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(0px) translateY(0px);
   }
-  p:hover {
-    text-shadow: 0 0 4px orangered;
+  25% {
+    transform: translateX(2px) translateY(2px);
+  }
+  50% {
+    transform: translateX(2px) translateY(0px);
+  }
+  75% {
+    transform: translateX(0px) translateY(2px);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+@media (max-width: 550px) {
+  .aboutPage {
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+  .contacts {
+    a {
+      margin: 2vmax 7vmax;
+    }
   }
 }

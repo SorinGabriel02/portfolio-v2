@@ -1,3 +1,5 @@
+@import "./styles/variables";
+
 *,
 *::before,
 *::after {
@@ -9,6 +11,78 @@ html {
   font-family: "Source Code Pro", monospace;
   position: relative;
   min-height: 100%;
+}
+
+.app {
+  position: relative;
+  top: $headerHeight;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh - $headerHeight;
+  background: rgba(202, 255, 153, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(202, 255, 153, 1) 0%,
+    rgba(149, 186, 161, 1) 15%,
+    rgba(184, 255, 229, 1) 63%,
+    rgba(255, 197, 110, 1) 80%,
+    rgba(247, 107, 107, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(202, 255, 153, 1)),
+    color-stop(15%, rgba(149, 186, 161, 1)),
+    color-stop(63%, rgba(184, 255, 229, 1)),
+    color-stop(80%, rgba(255, 197, 110, 1)),
+    color-stop(100%, rgba(247, 107, 107, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(202, 255, 153, 1) 0%,
+    rgba(149, 186, 161, 1) 15%,
+    rgba(184, 255, 229, 1) 63%,
+    rgba(255, 197, 110, 1) 80%,
+    rgba(247, 107, 107, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(202, 255, 153, 1) 0%,
+    rgba(149, 186, 161, 1) 15%,
+    rgba(184, 255, 229, 1) 63%,
+    rgba(255, 197, 110, 1) 80%,
+    rgba(247, 107, 107, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(202, 255, 153, 1) 0%,
+    rgba(149, 186, 161, 1) 15%,
+    rgba(184, 255, 229, 1) 63%,
+    rgba(255, 197, 110, 1) 80%,
+    rgba(247, 107, 107, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(202, 255, 153, 1) 0%,
+    rgba(149, 186, 161, 1) 15%,
+    rgba(184, 255, 229, 1) 63%,
+    rgba(255, 197, 110, 1) 80%,
+    rgba(247, 107, 107, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#caff99', endColorstr='#f76b6b', GradientType=1 );
+  background-size: 400%;
+  animation: bgAnime 15s linear infinite alternate-reverse;
+}
+
+@keyframes bgAnime {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
 
 // svg animations landing page

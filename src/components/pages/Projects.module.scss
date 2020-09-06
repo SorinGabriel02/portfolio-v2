@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .projectsContainer {
   width: 100%;
   display: flex;
@@ -6,6 +8,15 @@
   h1 {
     padding: 1vmax;
     text-align: center;
-    text-shadow: 0 0 1px orange;
+    text-shadow: 0 0 2px $headerBgColor;
+    margin: 1vmax;
+  }
+}
+
+@media (max-width: 550px) {
+  .projectsContainer {
+    h1 {
+      font-size: 1.3rem;
+    }
   }
 }
