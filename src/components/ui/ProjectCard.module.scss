@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .projectCard {
   display: flex;
   flex-direction: column;
@@ -9,7 +11,7 @@
   box-shadow: 0 0 10px #e6ffab;
   h2 {
     text-align: center;
-    margin-top: 0.4vmax;
+    margin-top: 1vmax;
     text-shadow: 0 0 1px orange;
   }
   p {
@@ -33,7 +35,7 @@
     padding: 0.8vmax;
     color: black;
     margin: 0 1vmax;
-    background-color: rgb(253, 229, 185);
+    background-color: $headerBgColor;
     box-shadow: 0 0 2px;
     transition: all 0.2s linear;
   }
