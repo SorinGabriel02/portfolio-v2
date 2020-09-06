@@ -1,0 +1,48 @@
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 1vmax;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid white;
+  box-shadow: 0 0 10px #e6ffab;
+  h2 {
+    text-align: center;
+    margin-top: 0.4vmax;
+    text-shadow: 0 0 1px orange;
+  }
+  p {
+    padding: 1vmax 2vmax;
+    text-indent: 2vmax;
+  }
+  img {
+    width: 95%;
+    display: block;
+    margin: 1.5vmax 0;
+    box-shadow: 0 0 3px #e6ffab;
+  }
+}
+
+.links {
+  display: flex;
+  margin: 0.3vmax;
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 0.8vmax;
+    color: black;
+    margin: 0 1vmax;
+    background-color: rgb(253, 229, 185);
+    box-shadow: 0 0 2px;
+    transition: all 0.2s linear;
+  }
+  a:hover {
+    background-color: rgb(235, 205, 151);
+    box-shadow: 0 0 8px;
+  }
+  a:active {
+    cursor: grab;
+    box-shadow: 0 0 4px;
+  }
+}

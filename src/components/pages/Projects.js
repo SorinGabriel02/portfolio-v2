@@ -1,24 +1,23 @@
 import React from "react";
 
-import { projectsContainer, projectCard } from "./Projects.module.scss";
+import { PROJECTS } from "../../utils/projects";
+import { projectsContainer } from "./Projects.module.scss";
+import ProjectCard from "../ui/ProjectCard";
 
 const Projects = () => {
   return (
     <main className={projectsContainer}>
       <h1>What I've Been Working On</h1>
-      <p>
-        This section of the portfolio is under construction and will be updated
-        soon...
-      </p>
-      <section className={projectCard}>
-        <h2>Support Teachers</h2>
-      </section>
-      <section className={projectCard}>
-        <h2>Ravenous</h2>
-      </section>
-      <section className={projectCard}>
-        <h2>Pick Me</h2>
-      </section>
+      {PROJECTS.map((project) => (
+        <ProjectCard
+          key={project.id}
+          name={project.name}
+          codeUrl={project.codeUrl}
+          liveUrl={project.liveUrl}
+          imageSrc={project.imageSrc}
+          description={project.details}
+        />
+      ))}
     </main>
   );
 };
