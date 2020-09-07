@@ -1,12 +1,10 @@
 import React from "react";
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import { logo, mainHeader, links, activeLink } from "./Header.module.scss";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 const Header = () => {
-  const history = useHistory();
-  console.log(history);
   return (
     <header className={mainHeader}>
       <NavLink to="/home">

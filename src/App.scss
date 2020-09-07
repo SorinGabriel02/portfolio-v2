@@ -1,0 +1,102 @@
+@import "./styles/variables";
+
+$timeout: 1000;
+
+.app {
+  position: relative;
+  top: $headerHeight;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh - $headerHeight;
+  background: rgba(229, 247, 255, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(229, 247, 255, 1) 0%,
+    rgba(255, 248, 219, 1) 12%,
+    rgba(239, 255, 219, 1) 27%,
+    rgba(219, 255, 246, 1) 42%,
+    rgba(255, 245, 219, 1) 59%,
+    rgba(244, 255, 219, 1) 79%,
+    rgba(224, 255, 219, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(229, 247, 255, 1)),
+    color-stop(12%, rgba(255, 248, 219, 1)),
+    color-stop(27%, rgba(239, 255, 219, 1)),
+    color-stop(42%, rgba(219, 255, 246, 1)),
+    color-stop(59%, rgba(255, 245, 219, 1)),
+    color-stop(79%, rgba(244, 255, 219, 1)),
+    color-stop(100%, rgba(224, 255, 219, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(229, 247, 255, 1) 0%,
+    rgba(255, 248, 219, 1) 12%,
+    rgba(239, 255, 219, 1) 27%,
+    rgba(219, 255, 246, 1) 42%,
+    rgba(255, 245, 219, 1) 59%,
+    rgba(244, 255, 219, 1) 79%,
+    rgba(224, 255, 219, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(229, 247, 255, 1) 0%,
+    rgba(255, 248, 219, 1) 12%,
+    rgba(239, 255, 219, 1) 27%,
+    rgba(219, 255, 246, 1) 42%,
+    rgba(255, 245, 219, 1) 59%,
+    rgba(244, 255, 219, 1) 79%,
+    rgba(224, 255, 219, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(229, 247, 255, 1) 0%,
+    rgba(255, 248, 219, 1) 12%,
+    rgba(239, 255, 219, 1) 27%,
+    rgba(219, 255, 246, 1) 42%,
+    rgba(255, 245, 219, 1) 59%,
+    rgba(244, 255, 219, 1) 79%,
+    rgba(224, 255, 219, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(229, 247, 255, 1) 0%,
+    rgba(255, 248, 219, 1) 12%,
+    rgba(239, 255, 219, 1) 27%,
+    rgba(219, 255, 246, 1) 42%,
+    rgba(255, 245, 219, 1) 59%,
+    rgba(244, 255, 219, 1) 79%,
+    rgba(224, 255, 219, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5f7ff', endColorstr='#e0ffdb', GradientType=1 );
+  background-size: 400%;
+  animation: bgAnime 15s linear infinite alternate-reverse;
+}
+
+.pages-enter {
+  transform: translate3d(-100%, 0, 0);
+}
+
+.pages-exit-active {
+  transform: translate3d(-100%, 0, 0);
+}
+
+//Enter is active (Page has finished transitioning) make it settle down
+.pages-enter.pages-enter-active {
+  transform: translate3d(0, 0, 0);
+  //Apply all transitions
+  transition: all 400ms ease-in-out;
+}
+
+@keyframes bgAnime {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
