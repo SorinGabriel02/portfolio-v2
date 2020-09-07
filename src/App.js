@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import { Switch, Route, Redirect, useLocation } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
@@ -11,24 +11,30 @@ import Footer from "./components/shared/Footer";
 
 function App() {
   const location = useLocation();
-
-  const currentKey = location.pathname.split("/")[1];
-
-  const [prevLocation, setPrevLocation] = useState(location.pathname);
-
-  const transitionDirection = () => {};
+  const currentPath = location.pathname;
+  const previousPath = location.state && location.state.from;
+  // needed for CSSTransition
+  const nodeRef = useRef(null);
+  // array of all routes in order
+  const routes = ["/home", "/projects", "/about"];
+  // whether the user is navigating from right or from left
+  // animate from right or left
+  const fromRight = () => {
+    return Boolean(routes.indexOf(currentPath) <= routes.indexOf(previousPath));
+  };
 
   return (
     <TransitionGroup component="div" className="app">
       <Header />
       <CSSTransition
+        nodeRef={nodeRef}
         key={location.key}
-        timeout={{ enter: 400, exit: 5 }}
+        timeout={{ enter: 300, exit: 5 }}
         classNames="pages"
         mountOnEnter={false}
         unmountOnExit={true}
       >
-        <div className="right">
+        <div ref={nodeRef} className={fromRight() ? "right" : "left"}>
           <Switch location={location}>
             <Route exact path="/home">
               <Welcome />
