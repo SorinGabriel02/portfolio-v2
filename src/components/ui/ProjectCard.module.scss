@@ -6,9 +6,8 @@
   align-items: center;
   width: 80%;
   margin: 1vmax;
-  background: rgba(0, 0, 0, 0.1);
-  border: 1px solid white;
-  box-shadow: 0 0 10px #e6ffab;
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 3px;
   h2 {
     text-align: center;
     margin-top: 1vmax;
@@ -37,10 +36,10 @@
     margin: 0 1vmax;
     background-color: $headerBgColor;
     box-shadow: 0 0 2px;
+    border-radius: 3px;
     transition: all 0.2s linear;
   }
   a:hover {
-    background-color: rgb(235, 205, 151);
     box-shadow: 0 0 8px;
   }
   a:active {

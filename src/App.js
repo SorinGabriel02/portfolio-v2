@@ -12,16 +12,16 @@ function App() {
     <div className="app">
       <Header />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/home">
           <Welcome />
         </Route>
-        <Route path="/projects">
+        <Route exact path="/projects">
           <Projects />
         </Route>
-        <Route path="/about">
+        <Route exact path="/about">
           <About />
         </Route>
-        <Redirect to="/" />
+        <Redirect to="/home" />
       </Switch>
       <Footer />
     </div>

@@ -8,8 +8,8 @@
   width: 75%;
   min-height: 74vh;
   padding: 2vmax;
-  box-shadow: 0 0 4px $boxShadowColor;
-  background-color: rgba(134, 134, 134, 0.15);
+  box-shadow: 0 0 3px;
+  background-color: rgba(134, 134, 134, 0.3);
   h1 {
     text-align: center;
   }
@@ -24,8 +24,7 @@
     text-shadow: 0 0 1px orangered;
   }
   h1 {
-    color: white;
-    text-shadow: 1px 1px 4px orangered;
+    text-shadow: 0 0 1px orangered;
   }
 }
 

@@ -1,25 +1,33 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 
-import { logo, mainHeader, links } from "./Header.module.scss";
+import { logo, mainHeader, links, activeLink } from "./Header.module.scss";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 const Header = () => {
+  const history = useHistory();
+  console.log(history);
   return (
     <header className={mainHeader}>
-      <NavLink to="/">
+      <NavLink to="/home">
         <Logo className={logo} />
       </NavLink>
       <nav>
         <ul className={links}>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink activeClassName={activeLink} to="/home">
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/projects">Projects</NavLink>
+            <NavLink activeClassName={activeLink} to="/projects">
+              Projects
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/about">About</NavLink>
+            <NavLink activeClassName={activeLink} to="/about">
+              About
+            </NavLink>
           </li>
         </ul>
       </nav>
