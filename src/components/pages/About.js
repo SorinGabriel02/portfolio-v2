@@ -2,6 +2,7 @@ import React from "react";
 
 import {
   aboutPage,
+  describeMe,
   skills,
   contacts,
   email,
@@ -17,13 +18,20 @@ import github from "../../assets/github.png";
 const About = () => {
   return (
     <main className={aboutPage}>
-      <h1>About Me</h1>
-      <h2>
-        I enjoy building web apps, solving problems, meditation, coffee and I'm
-        always grateful for the opportunity to work on meaningful projects
-      </h2>
+      <h1>About This Guy</h1>
+      <p className={describeMe}>
+        Last year in July I felt to start learning programming &#40;an old
+        passion of mine from high school&#41; and I noticed that it's enjoyable.
+        As I started to learn web development, using online resources like
+        Codecademy, FreeCodeCamp, Udemy and Scrimba I noticed that I like
+        learning how things work, figuring stuff out and solving problems.
+      </p>
+      <p className={describeMe}>
+        Besides coding I also enjoy meditation because it helps me clear and
+        rest my mind and coffee because well... it's tasty. &#128522;
+      </p>
       <section className={skills}>
-        <h3>Some Of My Skills Are</h3>
+        <h3>These Are Some Of My Skills...</h3>
         <ul>
           <li>
             <p>&#9830; ReactJS</p>

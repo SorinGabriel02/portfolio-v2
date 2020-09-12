@@ -6,12 +6,7 @@
     text-align: center;
     text-shadow: 0 0 1px orange;
     border-bottom: 1px solid white;
-  }
-  h2 {
-    margin-bottom: 1vmax;
-    padding-bottom: 2vmax;
-    text-shadow: 0 0 1px orange;
-    border-bottom: 1px solid white;
+    animation: mainHeading 1s ease-in-out 1s;
   }
   h3 {
     text-shadow: 0 0 1px orangered;
@@ -43,6 +38,15 @@
   img:hover {
     box-shadow: 0 0 4px;
   }
+}
+
+p.describeMe {
+  margin-bottom: 1vmax;
+  padding-bottom: 2vmax;
+  text-shadow: 0 0 1px orange;
+  border-bottom: 1px solid white;
+  font-weight: normal;
+  text-indent: 5%;
 }
 
 .skills {
@@ -87,6 +91,21 @@
 
 .git {
   animation: fly 5.2s linear infinite alternate-reverse;
+}
+
+@keyframes mainHeading {
+  0% {
+    letter-spacing: 0rem;
+    text-shadow: 0 0 1px orange;
+  }
+  50% {
+    letter-spacing: 0.5rem;
+    text-shadow: 0 0 20px black;
+  }
+  100% {
+    letter-spacing: 0rem;
+    text-shadow: 0 0 1px orange;
+  }
 }
 
 @keyframes fly {
