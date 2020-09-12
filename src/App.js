@@ -16,7 +16,7 @@ function App() {
   // needed for CSSTransition
   const nodeRef = useRef(null);
   // array of all routes in order
-  const routes = ["/home", "/projects", "/about"];
+  const routes = ["/", "/home", "/projects", "/about"];
   // whether the user is navigating from right or from left
   // animate from right or left
   const fromRight = () => {
@@ -36,7 +36,7 @@ function App() {
       >
         <div ref={nodeRef} className={fromRight() ? "right" : "left"}>
           <Switch location={location}>
-            <Route exact path="/home">
+            <Route exact path="/">
               <Welcome />
             </Route>
             <Route exact path="/projects">
@@ -45,7 +45,7 @@ function App() {
             <Route exact path="/about">
               <About />
             </Route>
-            <Redirect to="/home" />
+            <Redirect to="/" />
           </Switch>
         </div>
       </CSSTransition>

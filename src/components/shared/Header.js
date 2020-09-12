@@ -8,15 +8,16 @@ const Header = () => {
   const location = useLocation();
   return (
     <header className={mainHeader}>
-      <NavLink to={{ pathname: "/home", state: { from: location.pathname } }}>
+      <NavLink to={{ pathname: "/", state: { from: location.pathname } }}>
         <Logo className={logo} />
       </NavLink>
       <nav>
         <ul className={links}>
           <li>
             <NavLink
+              exact
               activeClassName={activeLink}
-              to={{ pathname: "/home", state: { from: location.pathname } }}
+              to={{ pathname: "/", state: { from: location.pathname } }}
             >
               Home
             </NavLink>
