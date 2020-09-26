@@ -28,7 +28,10 @@ const About = () => {
       </p>
       <p className={describeMe}>
         Besides coding I also enjoy meditation because it helps me clear and
-        rest my mind and coffee because well... it's tasty. &#128522;
+        rest my mind and coffee because well... it's tasty.{" "}
+        <span role="img" aria-label="smiley face">
+          &#128522;
+        </span>
       </p>
       <section className={skills}>
         <h3>These Are Some Of My Skills...</h3>
